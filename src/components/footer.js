@@ -11,10 +11,10 @@ import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
 
-const Bio = () => {
+const Footer = () => {
   const data = useStaticQuery(graphql`
-    query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+    query FooterQuery {
+      avatar: file(absolutePath: { regex: "/d.png/" }) {
         childImageSharp {
           fixed(width: 50, height: 50) {
             ...GatsbyImageSharpFixed
@@ -43,6 +43,7 @@ const Bio = () => {
         marginBottom: rhythm(2.5),
       }}
     >
+      <a href={`https://twitter.com/${social.twitter}`}>
       <Image
         fixed={data.avatar.childImageSharp.fixed}
         alt={author.name}
@@ -56,15 +57,16 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
+      </a>
       <p>
         Written by <strong>{author.name}</strong>. {author.summary}
         {` `}
         <a href={`https://twitter.com/${social.twitter}`}>
-          Gawk at my Twitter
+          This is a different Footer! 
         </a>
       </p>
     </div>
   )
 }
 
-export default Bio
+export default Footer
