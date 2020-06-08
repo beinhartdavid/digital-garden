@@ -1,4 +1,7 @@
 module.exports = {
+  
+  pathPrefix: "/digital-garden",
+  
   siteMetadata: {
     title: `David's Digital Garden`,
     author: {
