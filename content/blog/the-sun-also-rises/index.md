@@ -2,6 +2,7 @@
 title: The Sun Also Rises
 date: "2015-05-28T22:40:32.169Z"
 description: My Favorite Quote from the book
+published: false 
 ---
 
 I took a great books course at Carnegie Mellon. It wasn't on the "Classics" and it didn't feel pretentious. In fact when I first told my advisor about it, still without the official distinction of having an additional major in Creative Writing, she grilled me on the reading list. In particular laughing at Gulliver's Travels. "Ha! That's a kids story, I read that as a child and mostly for the pictures." 
