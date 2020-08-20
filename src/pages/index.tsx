@@ -9,6 +9,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import Garden from "../components/garden"
 
 type Data = {
   site: {
@@ -41,6 +42,8 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
+      <Garden />
+      
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
